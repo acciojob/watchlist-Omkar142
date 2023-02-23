@@ -1,8 +1,11 @@
 package com.driver;
 
-import java.util.*;
-
 import org.springframework.stereotype.Repository;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
 
 @Repository
 public class MovieRepository {
@@ -32,7 +35,7 @@ public class MovieRepository {
 
     public void saveMovieDirectorPair(String movie, String director){
 
-        //1. Add the movie into Datbase ---> WRONG bcz I dont have te movie object
+        //1. Add the movie into Database ---> WRONG bcz I dont have te movie object
 
         if(movieMap.containsKey(movie)&&directorMap.containsKey(director)){
 
